@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class=''>
+<head>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+  <div class='toggle' id='switch'>
+  		<div class='toggle-text-off'>OFF</div>
+  		<div class='glow-comp'></div>
+  		<div class='toggle-button'></div>
+  		<div class='toggle-text-on'>ON</div>
+  </div>
+
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  <!-- <script src='http://libs.useso.com/js/jquery/1.11.0/jquery.min.js'></script> -->
+
+  <script>
+
+  $('.toggle').click(function(e){
+    e.preventDefault(); // The flicker is a codepen thing
+    $(this).toggleClass('toggle-on');
+  });
+
+  </script>
+
+</body>
+</html>
